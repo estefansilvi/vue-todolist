@@ -9,11 +9,11 @@
   </head>
   <body>
     <div id="app">
-      <input v-model="arraySomething" v-on:keyup.enter="submit" type="text" name="" value="" placeholder="inserire qualcosa">
+      <input v-model="something"  type="text" name="" value="" placeholder="inserire qualcosa">
       <button  @click="submit" type="button" name="button">aggiungi</button>
       <button @click="deleteEvent" type="button" name="button">elimina</button>
       <ul>
-        <li v-for="element in arraySomething">{{ element }}<i @click="deleteEvent(i)" class="far fa-times-circle"></i></li>
+        <li v-for="element in arraySomething">{{ element }}<i @click="deleteEvent()" class="far fa-times-circle"></i></li>
       </ul>
     </div>
 
