@@ -3,18 +3,22 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
     <title></title>
 
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   </head>
   <body>
-    <div id="app">
+    <div id="app" class="box">
+      <img class="logo" src="img/logo.png" alt="">
       <input v-model="something"  type="text" name="" value="" placeholder="inserire qualcosa">
-      <button  @click="submit" type="button" name="button">aggiungi</button>
-      <button @click="deleteEvent" type="button" name="button">elimina</button>
-      <ul>
-        <li v-for="element in arraySomething">{{ element }}<i @click="deleteEvent()" class="far fa-times-circle"></i></li>
-      </ul>
+      <i @click="submit" class="fas fa-plus-circle plus cursor"></i>
+
+      <div class="container">
+        <ul>
+          <li v-for="(element,index) in arraySomething">{{ element }}<i @click="deleteEvent(index)" class="fas fa-trash-alt"></i></li>
+        </ul>
+      </div>
     </div>
 
 

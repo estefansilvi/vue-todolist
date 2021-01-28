@@ -1,0 +1,51 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.cursor{
+  cursor: pointer;
+}
+.box{
+  width: 400px;
+  margin:20px auto;
+  border: 1px solid black;
+  border-radius: 8px;
+  text-align: center;
+  padding:15px;
+}
+
+.logo{
+  width: 50%;
+  margin-bottom: 15px;
+}
+
+input{
+  margin-bottom:10px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 15px;
+  padding:5px 0;
+}
+
+i.plus{
+  vertical-align: middle;
+  font-size: 25px;
+}
+
+ul li{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  border-bottom:1px solid lightgrey;
+  padding:5px;
+  margin:5px 0;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+li i{
+  margin-left:10px;
+  color: red;
+  vertical-align: middle;
+}
