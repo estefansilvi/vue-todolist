@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <title></title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  </head>
+  <body>
+    <div id="app">
+      <input v-model="arraySomething" v-on:keyup.enter="submit" type="text" name="" value="" placeholder="inserire qualcosa">
+      <button  @click="submit" type="button" name="button">aggiungi</button>
+      <button @click="deleteEvent" type="button" name="button">elimina</button>
+      <ul>
+        <li v-for="element in arraySomething">{{ element }}<i @click="deleteEvent(i)" class="far fa-times-circle"></i></li>
+      </ul>
+    </div>
+
+
+  <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>
