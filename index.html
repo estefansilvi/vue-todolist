@@ -11,7 +11,7 @@
   <body>
     <div id="app" class="box">
       <img class="logo" src="img/logo.png" alt="">
-      <input v-model="something"  type="text" name="" value="" placeholder="inserire qualcosa">
+      <input v-model="something" @keyup.enter="submit" type="text" name="" value="" placeholder="inserire qualcosa">
       <i @click="submit" class="fas fa-plus-circle plus cursor"></i>
 
       <div class="container">
